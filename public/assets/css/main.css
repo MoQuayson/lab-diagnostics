@@ -1,0 +1,133 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#sidebar {
+    position: fixed;
+    top: 65px;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    transition: 0.2s;
+    background-color: rgb(0, 0, 51);
+}
+
+.sidebar-item {
+    list-style: none;
+    line-height: 40px;
+    padding: 10px 0px 0px 15px;
+}
+
+.sidebar-brand,
+.sidebar-brand:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-item .page,
+.sidebar-item a {
+    margin-right: 4px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sidebar-item a:hover {
+    color: goldenrod;
+}
+
+.sidebar-nav {
+    padding: 0;
+}
+
+.sidebar-nav a .bi-chevron-down {
+    margin-right: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sidebar-nav a:not(.collapsed) .bi-chevron-down {
+    transform: rotate(180deg);
+}
+
+.sidebar-item.active {
+    border-left: 3px solid red;
+    font-weight: bolder;
+}
+
+.sub-sidebar-item.active {
+    /*border-left: 3px solid red;*/
+    color: red;
+    font-weight: bolder;
+}
+
+.sidebar-header {
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.sidebar-item a span {
+    font-weight: bold;
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    color: white;
+}
+
+
+/*#user_dropdown {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}*/
+
+
+/*.sidebar-item a span {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}*/
+
+#header {
+    background-color: rgba(6, 98, 178, 0.9);
+    height: 65px;
+}
+
+#notification {
+    font-size: large;
+    color: white;
+}
+
+#user_dropdown {
+    font-size: 22px;
+}
+
+.form-label span {
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+    #sidebar {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+    }
+    #header {
+        background-color: rgba(6, 98, 178, 0.9);
+        height: 65px;
+    }
+}
+
+.job-link {
+    color: rgb(3, 3, 94);
+    font-size: 14px;
+}
+
+label.error {
+    color: red;
+}
